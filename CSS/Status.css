@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.Status{
+    border-style: solid;
+    border-top: steelblue;
+    align-items: left;
+    padding: 12px;      
+    border: 30px;                                            
+}
+.ficha{
+    align-items: top;
+    border-color:#010A13;
+    border-top: steelblue;
+    border-style: solid;
+    width: 350px;
+    background-color: #010A13;    
+    
+}
+.ficha2{
+    border-color:#010A13;
+    border-top: steelblue;
+    border-style: solid;
+    background-color: #010A13;   
+  
+    color: whitesmoke;
+    width: 340px;
+}
+div.ficha{
+    display: inline-block;
+}
+div.ficha table tr{
+    color: white;
+  
+}
+div.ficha table tr td.label-1{
+    display: flex;
+    float: left;
+}
+.atributos{
+    float: right;
+    color: white;
+    border-top-style: solid;
+    border-width: 5px;
+    border-top-color: steelblue;
+    width: 250px;
+    height: 500px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+}
+.titulo{
+    text-align: center;
+    align-self: center;
+}
+.atri{
+    float: left;
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
+.atri2{
+    float: right;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.c{
+    font-size: 25px;
+    width: fit-content; 
+}
+
+  
+fieldset{
+    background-color: rgb(37, 37, 37);
+    width: 70px;
+    height: 90px;
+    border-style: none;
+    border-top-style: solid;
+    border-top-width: 5px;
+    margin: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.list{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    
+}
+.list a{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 10px;
+    padding: 20px 10px 10px;
+}
+.personagens{
+    float: right;
+    width: 50%;
+    height: 500px;
+    border-style: none;
+    
+}
