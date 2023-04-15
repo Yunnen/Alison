@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="CSS\BarraLateral.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Teste</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+     
+   <header>
+    <div class="navegacao">
+            <ul>
+                <li class="foto"><img src="img\Personagem.jpg" class="foto"></li>
+                
+                <li class="list active" id="Status"> 
+                    <a href="Status.php" target="FUN" style="--clr:#0397AB;">
+                    <i class="fas fa-address-card" ></i>
+                    <span class="text">Informações</span>
+                    </a>
+                    
+                </li>
+
+                <li class="list" id="Habilidades"> 
+                    <a href="AlisonEternos.php"  target="FUN" style="--clr:#C8AA6E;">
+                    <span class="icon"><i class="fa-solid fa-bolt"></i></span>
+                    <span class="text">Eternos</span></a>
+                </li>
+
+                <li class="list" id="Itens"> 
+                    <a href="itens.php" target="FUN" style="--clr:Plum;">
+                    <span class="icon"><i class="fa-solid fa-suitcase-rolling"></i></span>
+                    <span class="text">Itens</span></a>
+                </li>
+                <li class="list" id="Receitas"> 
+                    <a href="receitas.php" target="FUN" style="--clr:#c6e5b1;">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-book"></i></span>
+                    <span class="text">Receitas</span></a>
+                </li>
+
+                <li class="list" id="Loja"> 
+                    <a href="#" style="--clr:BlueViolet;">
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <span class="text">Loja</span></a>
+                </li>
+
+                <li class="list" id="Opções"> 
+                    <a href="#" style="--clr:#f44336;">
+                    <span class="icon"><i class="fa-solid fa-wrench"></i></span>
+                    <span class="text">Opções</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+<main> 
+   
+    <iframe class="Frame" width="99%" height="620px" src="about:blank" name="FUN"></iframe>
+
+
+</main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/1c8b0a3809.js" crossorigin="anonymous"></script>
+    
+    <script>
+        let navegacao = document.querySelector('.navegacao');
+        let list = document.querySelectorAll('.list');
+        function activeLink(){
+            
+            list.forEach((item)=>item.classList.remove('active'));
+            this.classList.add('active');
+            
+            }
+         
+            $(navegacao).ready(function(){
+               
+                $("#Status").click(function(){
+                   
+                })
+                
+                $("#Pericias").click(function(){
+                   
+                   
+                })
+                
+                $("#Habilidades").click(function(){
+                    
+                })
+                
+                $("#Itens").click(function(){
+             
+                  
+                })
+                
+                $("#Loja").click(function(){
+             
+                    
+                })
+                
+                $("#Opções").click(function(){
+             
+                    
+                })
+           });
+            
+        list.forEach((item)=>item.addEventListener('click',activeLink));
+        i.forEach((item)=>item.addEventListener('click',activeLink));
+
+
+        
+    </script>
+    
+</body>
+</html>
